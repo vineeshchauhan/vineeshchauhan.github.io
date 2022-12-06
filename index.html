@@ -1,5 +1,14 @@
-<html>
-  <body>
-    <div w3-include-html="bm.html"></div> 
-  </body>
+<html> 
+  <head> 
+    <script src="jquery.js"></script> 
+    <script> 
+    $(function(){
+      $("#includedContent").load("bm.html"); 
+    });
+    </script> 
+  </head> 
+
+  <body> 
+     <div id="includedContent"></div>
+  </body> 
 </html>
